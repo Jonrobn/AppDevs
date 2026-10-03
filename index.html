@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CampusWear makes it simple to reserve official school uniforms and merchandise.">
+	<title>CampusWear | Merchandise Store</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- Navigation bar is populated by JavaScript. -->
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<div id="navigation-content"></div>
+		</div>
+	</header>
+
+	<!-- Merchandise announcement is populated by JavaScript. -->
+	<section class="announcement" aria-label="Merchandise announcement">
+		<div id="announcement-content"></div>
+	</section>
+
+	<main>
+		<section class="hero container" aria-labelledby="hero-title">
+			<div id="hero-copy" class="hero-copy"></div>
+
+			<div class="hero-visual" aria-label="CampusWear merchandise showcase" data-showcase="uniform">
+				<div class="hero-hover-circle" aria-hidden="true"></div>
+				<div class="visual-kicker">THE EVERYDAY<br><strong>ESSENTIAL</strong></div>
+				<div class="sun-shape"></div>
+				<div class="uniform">
+					<div class="showcase-garment">
+						<div class="hanger" aria-hidden="true"></div>
+						<div class="shirt-collar left-collar"></div>
+						<div class="shirt-collar right-collar"></div>
+						<div class="shirt"></div>
+						<div class="blazer left-blazer"><span class="sleeve-button"></span></div>
+						<div class="blazer right-blazer"><span class="sleeve-button"></span></div>
+						<div class="lapel left-lapel"></div>
+						<div class="lapel right-lapel"></div>
+						<div class="pocket"><span id="showcase-mark">SU</span></div>
+						<div class="tie"></div>
+						<div class="blazer-button button-one"></div>
+						<div class="blazer-button button-two"></div>
+					</div>
+				</div>
+				<div class="visual-caption" aria-live="polite"><span id="visual-caption-number">01</span><span id="visual-caption-label">School Uniform</span></div>
+			</div>
+		</section>
+
+		<section class="benefits" id="benefits" aria-labelledby="benefits-title">
+			<div class="container">
+				<div id="benefits-content"></div>
+			</div>
+		</section>
+
+		<section class="cta" id="cta" aria-labelledby="cta-title">
+			<div class="container cta-panel">
+				<div class="cta-copy">
+					<p class="eyebrow"><span></span>Ready for the semester</p>
+					<h2 id="cta-title">Dress for class <em>with confidence</em>.</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="reservations" id="reservations" aria-labelledby="reservations-title">
+			<div class="container">
+				<div id="reservations-content"></div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer" id="footer">
+		<div id="footer-content" class="container"></div>
+	</footer>
+
+	<div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+	<aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+		<div id="cart-drawer-content"></div>
+	</aside>
+
+	<div class="toast" role="status" aria-live="polite"></div>
+	<script src="scripts.js"></script>
+</body>
+</html>
